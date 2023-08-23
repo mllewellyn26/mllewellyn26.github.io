@@ -1,0 +1,185 @@
+/*COLOR SCHEME
+#000000 black - NAV BAR
+#1098F7 dodger blue - BORDERS
+#FFFFFF white TEXT
+#B5838D old rose - HEADER AND BULLET POINTS BACKGROUND
+#75485E eggplant - REGULAR BACKGROUND
+
+STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #B5838D;
+  text-align: center;
+}
+nav {
+  background-color: black;
+}
+header {
+  padding: 2rem;
+  background-color: #75485E;
+  color: white;
+}
+main {
+  margin: 2rem;
+  background-color: #B5838D;
+  font-family: "Courier New", monospace;
+}
+
+/* STYLE TEXT */
+
+.title {
+  padding: 0.05rem;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  color: white;
+  font-size: 22px;
+}
+#learn {
+  margin-bottom: 1.5rem;
+}
+p {
+  padding: 0.5rem;
+  color: white;
+  font-size: 15px;
+}
+.subtitle {
+  font-size: 18px;
+  padding: 0;
+}
+
+/* STYLE IMAGES */
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1098F7;
+  
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+#takeactionimage {
+  max-height: 90%;
+  max-width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* FLEX ITEMS */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.flex-item {
+  flex-basis: 100%;
+  margin: 1%;
+}
+@media screen and (max-width: 850px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* STYLE NAV BAR */
+
+.nav-bar {
+  display: inline;
+  float: right;
+}
+.nav-list {
+  list-style-type: none;
+  background-color: black;
+  overflow: hidden;
+  padding: 1em;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.nav-bar a:hover {
+  background-color: white;
+  color: #000000;
+}
+
+/* STYLE BUTTONS */
+
+.button {
+  margin: 1rem;
+  padding: 0.25rem;
+  background-color: #75485E;
+  color: white;
+  text-decoration: none;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1098F7;
+}
+button {
+  border-color: #1098F7;
+  border-width: 5px;
+  border-style: solid;
+  background-color: #75485E;
+  padding: 0.5%;
+  color: white;
+  font-family: "Courier New", monospace;
+}
+
+/* ADD MORE! */
+
+/* About page link */
+.custom {
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  padding: 1.5em;
+  padding-left: 2em;
+  background-color: #75485E;
+  list-style-type: circle;
+}
+/* Changes highlight color to darker blue to match theme */
+::selection {
+  background-color: #1098F7;
+}
+/* Video Styling */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+iframe {
+  max-width: 100%;
+  width: 314px;
+  height: 175px;
+  max-height: 100%;
+}
+/* Fact generator styling */
+#generator {
+  background-color: #75485E;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1098F7;
+}
+#what {
+  padding-top: 1em;
+}
